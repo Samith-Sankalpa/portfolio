@@ -2,13 +2,14 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import HomePage from "./screens/HomePage";
+import AboutPage from "./screens/AboutPage";
 
 function App() {
   return (
     <Router>
       <Switch>
         <Route path="/">
-          <HomePage />
+          <AboutPage />
         </Route>
       </Switch>
     </Router>

@@ -1,0 +1,163 @@
+:root {
+  --color-primary: #0003dc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* About Container */
+
+@media screen and (min-width: 768px) {
+  .about-container {
+    margin: 0 140px 0 140px;
+  }
+  .about--1x2 {
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 3rem;
+  }
+  .about__name {
+    color: #0003dc;
+    font-size: 6.7rem;
+    line-height: 7rem;
+    margin-bottom: 2rem;
+  }
+
+  .about__caption {
+    font-size: 1.8rem;
+
+    justify-self: end;
+    line-height: 3rem;
+  }
+  .about__content {
+    align-self: center;
+  }
+}
+
+.about {
+  display: grid;
+}
+
+.test--border {
+  width: 100%;
+  height: 600px;
+}
+
+@media screen and (max-width: 426px) {
+  .about-container {
+    margin: 0 20px 0 20px;
+  }
+  .about__name {
+    margin: 3rem 0 3rem 0;
+    color: #0003dc;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: center;
+  }
+
+  .about__caption {
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .about-container {
+    margin: 0 40px 0 40px;
+  }
+  .about__name {
+    color: #0003dc;
+    font-size: 3rem;
+  }
+
+  .about__caption {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+  }
+  .hero__image {
+    margin: 40px 0 0 0;
+  }
+}
+
+/* Past Experience */
+
+@media screen and (max-width: 426px) {
+  .container {
+    margin: 0 30px 0 30px;
+  }
+
+  .past-experience__1x3 {
+    grid-gap: 2rem;
+  }
+  .section__title {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: #112544;
+    text-align: center;
+  }
+  .company__name {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #112544;
+  }
+  .role__description {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+  .role__time {
+    font-size: 1.4rem;
+    color: #0003dc;
+  }
+  .present {
+    color: #ff252a;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section__title {
+    font-size: 3.8rem;
+    color: #112544;
+    margin-bottom: 3rem;
+  }
+  .past-experience__1x3 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+  }
+  .company__name {
+    font-size: 2.5rem;
+    color: #112544;
+    margin-bottom: 2rem;
+  }
+  .role__description {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .role__time {
+    font-size: 1.8rem;
+    color: #0003dc;
+  }
+  .present {
+    color: #ff252a;
+  }
+}
+
+.past-experience {
+  display: grid;
+}
+
+.container {
+  /* width: 100%; */
+  height: 500px;
+}
